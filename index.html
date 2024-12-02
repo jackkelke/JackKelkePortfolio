@@ -6,8 +6,12 @@
     <meta name="description" content="Portfolio website of Jack Kelke showcasing projects, experience, and hobbies.">
     <title>Jack Kelke Portfolio</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Roboto:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,47 +22,125 @@
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a href="mailto:Jackkelke@gmail.com" class="mail-icon" aria-label="Email Jack Kelke">
-                <img src="mail-icon.png" alt="Mail Icon">
-            </a>
+            </ul>           
         </nav>
+        <div class="header-buttons">
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+            <a href="mailto:jackkelke@example.com" class="mail-button">✉️</a>
+        </div>
     </header>
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-content">
+        <section id="home" class="home-section">
+            <div class="home-text" tabindex="0">
                 <h1>Jack Kelke</h1>
                 <p>Portfolio</p>
             </div>
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="about-section">
+        <section id="about" class="about-section" >
             <h2>About Me</h2>
-            <div class="about-grid">
+            <div class="about-row" tabindex="1">
                 <div class="about-item">
-                    <img src="friends.jpg" alt="Friends and Family">
-                    <p class="overlay-text">Support</p>
+                    <div class="overlay">
+                        <img src="Portfolioimages/IMG_2580.jpg" alt="Family">
+                        <p class="overlay-text">Support</p>
+                    </div>
                 </div>
                 <div class="about-item">
-                    <img src="competition.jpg" alt="Me competing">
-                    <p class="overlay-text">Challenge</p>
+                    <img src="Portfolioimages/IMG_2059.png" alt="Friends">                    
                 </div>
                 <div class="about-item">
-                    <img src="hobbies.jpg" alt="My hobbies">
-                    <p class="overlay-text">Hobbies</p>
+                    <img src="Portfolioimages/IMG_0539.png" alt="Me and My Girlfriend">
+                </div>
+            </div>
+
+            <div class="about-row" tabindex="2">
+                <div class="about-item">
+                    <div class="overlay">
+                        <img src="Portfolioimages/IMG_4630 2.PNG" alt="Me Competing">
+                        <p class="overlay-text">Challenge</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <img src="Portfolioimages/IMG_4192.JPG" alt="More Competition">
+                </div>
+                <div class="about-item">
+                    <img src="Portfolioimages/IMG_4115.JPG" alt="Another Competition Moment">
+                </div>
+            </div>
+
+            <div class="about-row" tabindex="3">
+                <div class="about-item">
+                    <div class="overlay">
+                        <img src="Portfolioimages/IMG_3284.png" alt="Skiing">
+                        <p class="overlay-text">Hobbies</p>
+                    </div>
+                </div>
+                <div class="about-item">
+                    <img src="Portfolioimages/IMG_3325.png" alt="Hockey">
+                </div>
+                <div class="about-item">
+                    <img src="Portfolioimages/IMG_5158.JPG" alt="Traveling">
                 </div>
             </div>
         </section>
 
-        <!-- Resume Section -->
-        <section id="resume" class="resume-section">
-            <h2>Resume & Experience</h2>
-            <div class="resume-content">
-                <img src="portrait.jpg" alt="Portrait of Jack Kelke">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod odio vitae aliquet.</p>
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2>Experience</h2>
+            <div class="resume-section" tabindex="4">
+                <p>Student at the University of Michigan pursuing a degree in UX Design with aspirations to build a career in automotive design. Experienced in 3D CAD design, prototyping, machine shop work, and coding, with a passion for bringing a vision to life.</p>
+            </div>
+            <div class="resume-section" tabindex="5">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li><strong>CAD Design:</strong> Fusion 360, Blender</li>
+                    <li><strong>Programming:</strong> HTML, CSS, Python, C++</li>
+                    <li><strong>Design Software:</strong> Adobe Illustrator, Adobe Photoshop</li>
+                    <li><strong>3D Printing:</strong> Multiple software platforms</li>
+                    <li><strong>Artistic Skills:</strong> Painting, drawing/drafting, and sculpting</li>
+                    <li><strong>Materials & Prototyping:</strong> Composite materials, extensive machine shop experience (vertical mill, lathe, drill press, band saw, metalworking)</li>
+                </ul>
+            </div>
+            <div class="resume-section"tabindex="6">
+                <h3>Professional Experience</h3>
+                <h4>Water Cannon Fountain Works - New Haven, MI</h4>
+                <p><strong>Prototype Engineer</strong> (June 2020 - Present)</p>
+                <ul>
+                    <li>Prototyped, tested, refined, and assembled pond fountains for commercial and residential use.</li>
+                    <li>Worked with composite materials and utilized machine shop tools to fabricate parts and components.</li>
+                    <li>Collaborated with others to improve product design and functionality.</li>
+                </ul>
+            </div>
+
+            <div class="resume-section" tabindex="7">
+                <h3>Significant Projects</h3>
+                <h4>High Risk Motorsports Wide Body Kit</h4>
+                <p><strong>Project Lead</strong> (May 2024 - September 2024)</p>
+                <ul>
+                    <li>Led the development and execution of bringing a completely custom automotive bodykit to life, taking the concept from initial idea to full creation.</li>
+                    <li>Gained hands-on experience in all stages of the process, including design, prototyping, fabrication, and testing.</li>
+                    <li>Worked with a variety of materials and tools, including 3D scanning, 3D Printing, Fusion 360 CAD software, materials like PETG plastic, fiberglass, aluminum, and machinery including the drill press.</li>
+                    <li>Collaborated with mentors and other experts across social media to gain more knowledge and refine the project to ensure success.</li>
+                </ul>
+            </div>
+
+            <div class="resume-section" tabindex="8">
+                <h3>Education</h3>
+                <p><strong>University of Michigan - Ann Arbor, MI</strong></p>
+                <p>Bachelor of Science in User Experience Design</p>
+            </div>
+
+            <div class="resume-section" tabindex="9">
+                <h3>Extracurricular Activities</h3>
+                <ul>
+                    <li>University of Michigan Men’s Track and Field Team</li>
+                    <li>University of Michigan Men’s Cross Country Team</li>
+                    <li>Volunteer Work: Regularly participate in community service and outreach programs</li>
+                </ul>
             </div>
         </section>
 
@@ -67,15 +149,116 @@
             <h2>Projects</h2>
             <p class="instruction">Click on a project image to flip and see details!</p>
             <div class="project-grid">
-                <div class="project-card">
-                    <div class="card-front">
-                        <img src="project1.jpg" alt="Project 1">
-                    </div>
-                    <div class="card-back">
-                        <p>Details about Project 1</p>
+                <div class="project-card" tabindex="10">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_3226.png" alt="Hand Drawing of Porsche GT2 RS Clubsport 25" aria-label="Porsche Drawing with">
+                        </div>
+                        <div class="card-back">
+                            <p>This is my hand drawing of a Porsche 911 GT2 RS Clubsport. This drawing tought me how to break up large drawings into smaller manageable parts to make the large picture. This project took me about a week to draw and greatly improved my understanding of shading with multiple different types of pencils. This is one of my most favorite projects I have completed so far. Cars are potentially my absolute favorite thing to draw and being able to bring them from real life to my paper brings me a great deal of joy.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Repeat similar structure for other projects -->
+                <div class="project-card" tabindex="11">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_3246.png" alt="A drawing of a pilot with the reflection of the statue of liberty in his flight goggles">
+                        </div>
+                        <div class="card-back">
+                            <p>This is my hand drawing of a US Fighter Piolot I made for veterans day. This project helped me appriciate great detail and patience. This project, like most of my other drawings, took me a very long time to complete. Trying to capture every bit of detail was super difficult but payed off in the end. I love the way you can see New York City, especially the Statue of Liberty in the reflection of his goggles. This was supposed to symbolize the ultimate sacrafice, a Pilot risking his life for his country's Freedom. I think this drawing came out really great and im very happy with how it looks.  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="12">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_2271.png" alt="A sgraffito clay vase with a octopus">
+                        </div>
+                        <div class="card-back">
+                            <p> This project helps demonstrate one of my favorite hobbies, pottery! This was my first time doing scrafitto clay work (carving images out of the painted clay). This was a covid project while I, like many, was trapped at home. I really wanted to make something I can display on my shelf that looked awesome, and what looks cooler than an octopus! I carefully carved out the image onto the vase, I had lightly traced in pensil the outline of the octopus to help with the accuracy while carving. This project earned me a silver key in the schoolastic art fair in 2020 and tought me alot about clay work and how meticulus it can be. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="13">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_3089.png" alt="Charcoal drawing of a flower and recordplayer mix">
+                        </div>
+                        <div class="card-back">
+                            <p>This charcoal drawing help introduce me to the basics of charcoal drawing along with furthering my understanding of shading. This was my first attempt at ever drawing in charcoal, and I had a ton of fun and really learned how messy it can be! This project helped me incorperate important routine into my everyday drawings, like placing a mat below my hand to be sure to protect against smearing. This project took a great deal of time along with my others, especially because it was a gift for my sister who is largely into records, hence the idea for the project. This is supposed to represent an old record player with a horn that plays the sound, but this one is a flower. I think it came out awesome and was a great idea.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="14">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_3384.png" alt="Pastel drawing of a old VW Beetle">
+                        </div>
+                        <div class="card-back">
+                            <p>This is my Pastel Volkswagen Beetle, one of my favorite if not my favorite project I have ever done. I think this project came out the best of any other, while its not supposed to be highly detailed and display more of the pastel strokes, I think it is a great style. This image was originally a painting that inspired me to draw something similar with pastels. This was my first pastel project and definately makes me want to return to this medium. I love the shading and being able to use colors that you wouldn't expect to be there, but work perfectly. This project really showed me how to use unsespecting colors in transitions and how you may not realize a color is there, but in reality, so many coexist in an image and our minds blend them together. </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Significant Projects Section -->
+        <section id="significant-projects" class="projects-section">
+            <h2>Significant Projects</h2>
+            <h3> GTI WideBody Kit</h3>
+            <p class="instruction">Click on a project image to flip and see details!</p>
+            <div class="project-grid">
+                <div class="project-card" tabindex="15">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_4922.JPG" alt="An old 1983 VW GTI">
+                        </div>
+                        <div class="card-back">
+                            <p> A deep passion of mine is old german cars, the Porsches, the BMWs, and the Volkswagens, I love the boxy styling of these 80's cars and I really enjoy imagining what they could look like with my own spin on it. Here is my 1983 Volkswagen GTI I purchased to overhaul with my own style, particularly a wide body kit and some new color. I have been wanting to make a body kit for a vehicle for a very long time and I have finally done it for this car. Transportation / Automotive design is what I truley love and want to do as a career. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="16">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_5055.JPG" alt="3d scan of a 1983 VW GTI">
+                        </div>
+                        <div class="card-back">
+                            <p> Here is the first step I took in designing my custom wide body kit, 3D scanning. 3D scanning allowed me to get perfect dimensional accuracy while designing my kit. This was critical when it came to 3D modeling. This took place in my garage and took many attempts but I was eventually able to get a perfect mesh that I could inport to my modeling software. 3D scanning was pretty difficult but I deeply believe this is a very valuable skill to posses in the field of automotive design.   </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="17">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_5064.JPG" alt="3d model of a wide body kit">
+                        </div>
+                        <div class="card-back">
+                            <p>After 3D scanning, the next step I took was 3D modeling! This stage was my favorite, being able to create any concept I like is truely so satisfying. While the design took quite a few days to complete it was well worth it. This step helped teach me alot about using the application Fusion360, a very valuable tool for any designer. I used the forms application within fusion to help make the dynamic shapes and fit them to the car for a percise fit. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="18">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_1111.png" alt="An Old 1983 VW GTI with a 3d printed body kit on it">
+                        </div>
+                        <div class="card-back">
+                            <p>The next staged called for 3D printing. Being able to bring my 3d models to life with 3D printing is so satisfying, and watching the bodykit slowly be produced in essentially puzzel pieces was amazing. The ability to prototype and test versions was great. While there were many failed parts and set backs, I learned alot about 3D printing during this process and how to optimize printing and the results. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" tabindex="19">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="Portfolioimages/IMG_5610.jpg" alt="A shiny black 1983 VW GTI">
+                        </div>
+                        <div class="card-back">
+                            <p>The Final Product! This took countless hours and so much post processing but the final result is something I would not of believed I was capable of. I completely brought this project from my mind to reality in a few months. So many skills were learned during this project and I cannot wait to do it again and even better than before. Not only did I learn a bunch of new skills like 3D scanning, printing, and modeling, I learned about how im going to do it better next time. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -83,7 +266,8 @@
         <section id="contact" class="contact-section">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:Jackkelke@gmail.com">Jackkelke@gmail.com</a></p>
-            <p>Instagram: <a href="https://instagram.com/yourhandle">@yourhandle</a></p>
+            <p>Instagram: <a href="https://instagram.com/jack_kelke">@jack_kelke</a></p>
+            <p>Instagram: <a href="https://instagram.com/highriskmotorsports">@highriskmotorsports</a></p>
         </section>
     </main>
 
