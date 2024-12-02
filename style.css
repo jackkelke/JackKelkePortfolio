@@ -68,6 +68,7 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--link-hover-color); 
 }
+
 /* Home Section */
 .home-section {
     height: 100vh; 
