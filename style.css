@@ -346,7 +346,7 @@ header nav ul li a:hover {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (mix-width: 768px) {
     .about-row {
         flex-direction: column;
         align-items: center;
